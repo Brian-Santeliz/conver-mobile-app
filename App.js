@@ -6,9 +6,9 @@ import Footer from './src/components/Footer';
 export default function App() {
   return (
     <React.Fragment>
-      <Navbar />
+      <Navbar title='Calcula el precio de USD A BSS' />
       <Main />
-      <Footer />
+      <Footer title='Desarrollado por Brian Santeliz' />
     </React.Fragment>
   );
 }

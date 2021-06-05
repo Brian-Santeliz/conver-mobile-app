@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-const Footer = () => {
+const Footer = (props) => {
   const date = new Date().getFullYear();
   return (
     <View style={styles.footer}>
-      <Text style={styles.text}>Desarrollado por Brian Santeliz &copy; {date}</Text>
+      <Text style={styles.text}>
+        {props.title} &copy; {date}
+      </Text>
     </View>
   );
 };
@@ -16,10 +18,10 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     backgroundColor: 'green',
-    padding: 8
+    padding: 8,
   },
   text: {
-    fontSize: 20,
+    fontSize: 15,
     fontWeight: 'normal',
     color: 'white',
     textAlign: 'center',
